@@ -1,212 +1,280 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.79.0">
-    <title>彭彭老師_軟體工程師扶持計畫_申請履歷</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
+  <title>軟體工程師扶持計畫_申請履歷</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Bootstrap core CSS -->
+  <!-- Custom styles for this template -->
+  <link href="./css/carousel.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-    
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Bootstrap core CSS -->
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#back-to-top1').fadeIn();
+        } else {
+          $('#back-to-top1').fadeOut();
         }
-      }
-    </style>
+      });
+      // scroll body to 0px on click
+      $('#back-to-top1').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
+      });
+    });
+  </script>
+</head>
 
-    
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
-  </head>
-  <body>
-    
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Carousel</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+<body>
+
+  <header class="mb-md-3">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <a class="" href="https://training.pada-x.com/wehelp/">
+            <img src="https://training.pada-x.com/images/icon-256.png" width="50" height="50">
+          </a>
+          <a class="navbar-brand" href="#">軟體工程師扶持計畫(申請履歷)</a>
+        </div>
       </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container text-center">
+            <div class="row"><img src="./img/Introduction1.png" width="100%" height="500px"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container text-center">
+            <div class="row"> <img src="./img/Introduction2.png" width="700px" height="500px"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container text-center" style="padding-left: 150px;padding-top: 25px;">
+            <div class="row"> <img src="./img/Introduction3.png" width="700px" height="500px"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container text-center" style="padding-left: 150px;padding-top: 25px;">
+            <div class="row"> <img src="./img/Introduction4.png" width="700px" height="500px"></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+      <ol class="carousel-indicators" style="top:520px;">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active bg-dark"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1" class="bg-dark"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2" class="bg-dark"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="3" class="bg-dark"></li>
+      </ol>
+
     </div>
-  </nav>
-</header>
 
-<main>
-
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>彭彭老師_軟體工程師扶持計畫_申請履歷</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
-  </div>
-
-
-  <!-- Marketing messaging and featurettes
+    <!-- Marketing messaging and featurettes
   ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing">
+    <div class="container marketing">
 
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <hr class="featurette-divider">
+      <!-- START THE FEATURETTES -->
+      <div class="row mb-4 justify-content-start">
+        <div class="col-md col-xl col-sm mb-2 text-center">
+          <span class="d-inline-block" data-placement="top" tabindex="0" data-toggle="tooltip" title="個人簡介">
+            <a href="#q1" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Question 1</a>
+          </span>
+        </div>
+        <div class="col-md col-xl col-sm mb-2 text-center">
+          <span class="d-inline-block" data-placement="top" tabindex="0" data-toggle="tooltip" title="為什麼想成為工程師">
+            <a href="#q2" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Question 2</a>
+          </span>
+        </div>
+        <div class="col-md col-xl col-sm mb-2 text-center">
+          <span class="d-inline-block" data-placement="top" tabindex="0" data-toggle="tooltip"
+            title="為了成為工程師，曾經做過什麼努力？">
+            <a href="#q3" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Question 3</a>
+          </span>
+        </div>
       </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+      <div class="row mb-4 justify-content-start">
+        <div class="col-md col-xl col-sm mb-2 text-center">
+          <span class="d-inline-block" data-placement="top" tabindex="0" data-toggle="tooltip" title="對於工程師的職業想像是什麼？">
+            <a href="#q4" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Question 4</a>
+          </span>
+        </div>
+        <div class="col-md col-xl col-sm mb-2 text-center">
+          <span class="d-inline-block" data-placement="top" tabindex="0" data-toggle="tooltip"
+            title="如果參與這個計畫，會怎麼安排學習時間？">
+            <a href="#q5" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Question 5</a>
+          </span>
+        </div>
+        <div class="col-md col-xl col-sm mb-2 text-center">
+          <span class="d-inline-block" data-placement="top" tabindex="0" data-toggle="tooltip"
+            title="如果參與這個計畫，預期會碰到什麼困難？你打算怎麼解決它？">
+            <a href="#q6" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Question 6</a>
+          </span>
+        </div>
       </div>
+      <div class="row mb-4 justify-content-start">
+        <div class="col-md col-xl mb-2 text-center">
+        </div>
+        <div class="col-md col-xl col-sm mb-2 text-center">
+          <span class="d-inline-block" data-placement="top" tabindex="0" data-toggle="tooltip" title="想要對我們說的事情？">
+            <a href="#q7" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Question 7</a>
+          </span>
+        </div>
+        <div class="col-md col-xl mb-2 text-center">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+
+      <div class="col-md-12" id="q1">
+        <h4 class="featurette-heading">個人簡介</h4>
+        <p class="lead">
+          我叫黃智彥，畢業於逢甲大學資訊工程系，主修網路工程。<span style="font-weight:bold;">目前在緯創軟體擔任駐點網頁軟體工程師，駐點的公司為聯發科。</span><br />
+          因小時後的我對電腦非常有興趣，喜歡研究有關電腦的硬體零件與維修。所以高中毅然決然念高職的資訊科，<span
+            style="font-weight:bold;">之後大學進入南台科技大學就讀資訊工程，但進入學校後教學狀況與技術方面不如我預期，也決定考轉學考到逢甲大學就讀。</span><br />
+          而自己的<span style="font-weight:bold;">個人特質為開朗樂觀、冒險、責任感重,遇到問題會希望能秉持著打破砂鍋問到底的精神，並且解決它。</span><br />
+          平常時的興趣與休閒娛樂有慢跑、看影片、閱讀書籍、打保齡球。<br />
+        </p>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+
+      <div class="col-md-12" id="q2">
+        <h4 class="featurette-heading">為什麼想成為工程師</h4>
+        <p class="lead">
+          想當工程師是從小的夢想，小時候很喜歡碰有關電腦硬體的東西，組裝、維修(軟硬體都有)，但長大後從發現從事有關維修電腦的相關工作薪水不高，也就轉換了夢想，<span
+            style="font-weight:bold;">變改為全端工程師</span>。<br />
+          現在的自己有一些基礎在<br />
+          <span style="font-weight:bold;">前端技能:HTML,CSS,BootStrap,javascript,前端框架(vuejs)<br />
+            後端技能:Node.js(Express),.NET Core<br />
+            但希望能上到老師這麼門課程，是想要讓自己的技能樹能夠更深更廣<br />
+            以下是我想學習的目標<br />
+            1.加強自己在SQL方面的進階應用，過於複雜的查詢邏輯常常會不知道要如何撰寫<br />
+            2.CSS也要加強，尤其是在切版方面，希望自己是能夠將css更加結構化撰寫(學會使用scss)<br />
+            3.API Design,畢業後在撰寫API時，都沒有走正規的Restful API，並沒有清楚規劃GET,POST,PUT,DELETE<br />
+            4.學會如何在專案上導入Scrum<br />
+            5.CI/CD 技術因為從踏入職場後此技術是沒有碰過，但這個現在真的很多人都在使用<br />
+            6.上完這門課程我想面試上這間公司，<a href="https://www.104.com.tw/company/1a2x6bin60"
+              target="_blank">新加坡商鈦坦科技股份有限公司</a><br />
+          </span>
+        </p>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="col-md-12" id="q3">
+        <h4 class="featurette-heading">為了成為工程師，曾經做過什麼努努力</h4>
+        <p class="lead">
+          那時剛畢業先從事手機驗證測試工作，但之後遇到一些工作上的不如意，讓我踏入網頁前後端的世界。<br />
+          <span style="font-weight:bold;">因此我整整花了兩個月專心做我的side project(記帳系統)</span>，後段語言使用PHP（沒使用框架），<br />
+          前端沒使用框架只有用jquery去做網頁互動與資料的前端處理，是一個網頁記帳系統那時對網頁不太熟，<br />
+          很多都是先看別人的範例code改，雖然記帳系統並不是很完善，但基本的功能大致上都有，<br />
+          <span style="font-weight:bold;">登入/帳號申請/忘記密碼補發郵件/串接發票api/消費紀錄的新增修改刪除/金額統計。</span><br />
+          也算是在那時候想踏入網頁前後端的工作時付出的努力，幸運的也讓我能找到相關工作。
+        </p>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="col-md-12" id="q4">
+        <h4 class="featurette-heading">如果參與這個計畫，會怎麼安排學習時間</h4>
+        <p class="lead">
+          因現在有工作，所以就是利用下班時間與週末分配<br />
+          <span style="font-weight:bold;">一～五的下班時間=>19:00~23:00<br />
+            六日可以有16個小時的學習時間<br /></span>
+        </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="col-md-12" id="q5">
+        <h4 class="featurette-heading">對於工程師的職業想像是什麼？</h4>
+        <p class="lead">
+          就是能夠用<span style="font-weight:bold;">自己學到的科學知識與技術，來幫助別人解決生活或商業上面的難題。</span><br />
+          然後對於的電子軟硬體非常在行，很會修理東西。
+        </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="col-md-12" id="q6">
+        <h4 class="featurette-heading">如果參與這個計畫，預期會碰到什麼困難？你打算怎麼解決它？</h4>
+        <p class="lead">
+          通常學習有關電腦科學的相關知識容易碰到的就是無法將概念釐清，不太懂範例為什麼要這麼做？這個時候我想這樣做<br />
+          <span style="font-weight:bold;">1.先google看看別人有沒有跟你一樣不懂的，看高手怎麼幫他解答<br />
+            2.與同儕討論，一起切搓<br />
+            3.問老師，把你的想法跟學到的邏輯跟老師討論，讓老師指點你</span><br />
+        </p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="col-md-12" id="q7">
+        <h4 class="featurette-heading">想要對我們說的事情？</h4>
+        <p class="lead">
+          首先很謝謝老師能開這門課程，造福這麼多人，讓更多人成為軟體工程師<br />
+          <span style="font-weight:bold;">很希望彭彭老師能夠錄取我<br />
+            我真的很渴望上這門課程<br /></span>
+          或許我本身就是資工畢業但有關網頁技術都是靠自學，很多東西都算是一知半解<br />
+          所以很希望能透過老師這門課<br />
+          能讓我在這個領域更加進步<br />
+          <span style="font-weight:bold;">希望自己不要在原地踏步能從junior software engineer<br />
+            變為 senior software engineer。</span><br />謝謝老師百忙之中閱讀我的履歷。
+        </p>
+      </div>
+      <hr class="featurette-divider">
     </div>
 
-    <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+    <!-- FOOTER -->
+    <footer class="container">
+      <p>&copy; 2021 版權為黃智彥所有</p>
+    </footer>
 
-      </div>
-    </div>
+    <a id="back-to-top1" href="#" class="btn btn-secondary btn-lg back-to-top" role="button"><i
+        class="fas fa-chevron-up"></i></a>
 
-    <hr class="featurette-divider">
+  </main>
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+</body>
 
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
-
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
-</main>
-
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
-  </body>
 </html>

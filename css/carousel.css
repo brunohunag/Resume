@@ -8,6 +8,21 @@ body {
   color: #5a5a5a;
 }
 
+/*.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 50%;
+  border-radius: 50%;
+}*/
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -28,12 +43,30 @@ body {
 }
 .carousel-item > img {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
+
   min-width: 100%;
   height: 32rem;
 }
 
+.my-slider .carousel-indicators {
+  top: 10px;
+  justify-content:flex-start;
+  margin:0;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.carousel-indicators li:not(:last-child) {
+  margin-right: 20px;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
